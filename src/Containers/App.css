@@ -25,51 +25,7 @@ body
   background-color: #CBC5C5;
 }
 
-.App__navbar
-{
-  position: fixed;
-  top:0;
-  background-color: #ffffff;
-  width: 100%;
-  height: 4rem;
-  z-index: 100;
-  box-shadow: 0px 2px 6px;
-}
-.App__navbar_logo_box
-{
-  position: absolute;
-  left: 4%;
-  display: inline-block;
-  width: 16rem;
-  height: 5rem;
-  float: left;
-  
-}
-.App__navbar_link_div
-{
-  display:'inline-block';
-  padding:0rem;
-  margin:0;
-  position:absolute;
-  top:0.2rem;
-  left:60rem;
-  width:20rem;
-  height: 4rem;
-}
-.App__navbar_link
-{
-  display:inline-block;
-  margin:0;
-  padding:0.5rem 0.6rem;
-  margin-left:0.4rem; 
-}
-.App__navbar_link:hover{
-  background-color: #CBC5C5;
-  cursor: pointer;
-}
-.Active__link{
-  background-color: #CBC5C5;
-}
+
 .App__sidebar{
   position: absolute;
   top:4rem;

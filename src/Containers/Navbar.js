@@ -1,0 +1,35 @@
+import React from 'react';
+import InlineForm from '../Components/InlineForm';
+import NavLink from '../Components/NavLink';
+
+import './Navbar.css'
+
+const navbar=(props)=>{
+	return(
+
+	<header>
+      <div className="App__navbar">
+        <div className="App__navbar_logo_box">
+          
+          <span >
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="60" viewBox="0 0 317.375 147.621">
+              <g id="Logo" transform="translate(-217 -34)">
+                <path id="Path_1" data-name="Path 1" d="M48.811,34.5c-5.87-8.387-19.063,5.914-26.831-1.74s-5.2-18.782-10.691-26.767S0,.824,0,.824,28.389-2.138,42.708,2.8,57.273,20.557,57.273,20.557s-4.512,34.267-6.9,45.7-4.916.054-4.916.054S54.68,42.888,48.811,34.5Z" transform="translate(432.585 63.542) rotate(22)" fill="#4ca456"/>
+                <path id="Path_2" data-name="Path 2" d="M49.094,37.007c-5.827,8.316-19.164-6.045-26.9,1.525s-5.076,18.685-10.531,26.6S.374,70.2.374,70.2s28.5,3.175,42.827-1.631S57.683,50.975,57.683,50.975s-4.772-34.2-7.248-45.616S45.5,5.266,45.5,5.266,54.921,28.691,49.094,37.007Z" transform="matrix(-0.719, -0.695, 0.695, -0.719, 485.163, 182.068)" fill="#4ca456"/>
+                <text id="Nature" transform="translate(220 141)" fill="#000000" font-size="96" font-family="AnettePersonalUse, Anette Personal Use"><tspan x="0" y="0">N</tspan><tspan y="0" font-size="80">ature</tspan></text>
+                <text id="store" transform="translate(377 168)" fill="#394241" font-size="40" font-family="Haettenschweiler"><tspan x="0" y="0">store</tspan></text>
+              </g>
+            </svg>
+          </span>  
+          </div>
+          <InlineForm />
+          <NavLink clicked={props.clicked} navStates={props.navStates}/>
+        
+      </div>
+    </header>
+
+		);
+
+}
+
+export default navbar
