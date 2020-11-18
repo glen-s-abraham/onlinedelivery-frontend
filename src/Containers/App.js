@@ -4,11 +4,7 @@
 import './App.css';
 import React,{Component} from 'react';
 import Navbar from './Navbar';
-import ItemCard from '../Components/ItemCard';
-
-
-
-
+import HomePanel from './HomePanel';
 
 class App extends Component{
   state={
@@ -82,40 +78,8 @@ class App extends Component{
    if(this.state.navStates.showHome)
    {
      homePanel=(
-      <div>
-      <div className="App__sidebar">
-        <div className="App__sidebar_titlebox">
-        <h1 className="App__sidebar_title">Categories</h1>
-        </div>
-          <div className="App__sidebar_categorybox ">
-          <h2 className="App__sidebar_category">Vegetables</h2>
-        </div>
-
-        <div className="App__sidebar_categorybox Category__Active">
-          <h2 className="App__sidebar_category">Fish</h2>
-        </div>
-
-        <div className="App__sidebar_categorybox">
-          <h2 className="App__sidebar_category">Fruits</h2>
-        </div>
-
-        <div className="App__sidebar_categorybox">
-          <h2 className="App__sidebar_category">Cereal</h2>
-        </div>
-
-      </div>
-      <div class="App__body">
-      
-          <ItemCard/>
-          <ItemCard/>
-          <ItemCard/>
-          <ItemCard/>
-          <ItemCard/>
-          <ItemCard/>
-        
-
-      </div>
-      </div>); 
+      <HomePanel/>
+      );
    } 
 
    if(this.state.navStates.showAccount)

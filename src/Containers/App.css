@@ -26,57 +26,7 @@ body
 }
 
 
-.App__sidebar{
-  position: absolute;
-  top:4rem;
-  height:100vh;
-  width:28%;
-  background-color:#F9FFFE;
-  float:left;
-  position: fixed;
-  box-shadow: 2px 0px 6px;
-}
 
-.App__sidebar_titlebox{
-  width:100%;
-  height: 10vh;
-  margin-top: 1rem;
-}
-
-.App__sidebar_title{
-  width:100%;
-  color:#4CA456;
-  margin: auto;
-  font-size: 2rem;
-}
-
-.App__sidebar_categorybox{
-  width:100%;
-  height: 10vh;
-  display: block;
-  margin-top: 0.8rem; 
-  background-color: #4CA456;
-  color: white;
-  
-}
-.App__sidebar_category{
-  font-size: 1.5rem;
-  margin-left:6rem;
-  padding: 1rem;
-  text-align: left;
-}
-
-.App__sidebar_categorybox:hover
-{
-  background-color: #394241;
-  color:#4CA456; 
-  cursor: pointer;
-}
-.Category__Active
-{
-  background-color: #394241;
-  color:#4CA456; 
-}
 .App__body{
   position:absolute;
   left:25rem;
