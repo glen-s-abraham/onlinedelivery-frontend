@@ -5,13 +5,14 @@ import './App.css';
 import React,{Component} from 'react';
 import Navbar from './Navbar';
 import HomePanel from './HomePanel';
+import AccountsPanel from './AccountsPanel';
 
 class App extends Component{
   state={
     navStates:{
-    showHome:true,
+    showHome:false,
     showCart:false,
-    showAccount:false,
+    showAccount:true,
     showHistory:false
 
     },
@@ -85,9 +86,7 @@ class App extends Component{
    if(this.state.navStates.showAccount)
    {
     accountPanel=(
-      <div className="App__other_panels">
-        <h1>Accounts</h1>
-      </div>
+      <AccountsPanel/>
       );
    }
 
